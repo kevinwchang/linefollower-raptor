@@ -247,7 +247,7 @@ int main()
 	long integral = 0;
   
   int max = 0;
-  int const MaxEver = 255;
+  int const MaxEver = 160;
   unsigned int startMs;
 
 	init_motors();
@@ -273,12 +273,12 @@ int main()
 		if (counter < 20 || counter >= 60)
 		{
 			set_leds(0, 255);
-			set_motors(70,-60);
+			set_motors(50,-50);
 		}
 		else
 		{
 			set_leds(255, 0);
-			set_motors(-70,60);
+			set_motors(-50,50);
 		}
 
 		// This function records a set of sensor readings and keeps
@@ -338,7 +338,7 @@ int main()
 			// turn to the left, and the magnitude of the number determines
 			// the sharpness of the turn.
 			//int power_difference = proportional/4 + derivative*18;
-			int power_difference = proportional/2 + derivative*20;
+			int power_difference = proportional/2 + derivative*25;
 
 			// Compute the actual motor settings.  We never set either motor
 			// to a negative value.
