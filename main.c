@@ -247,7 +247,7 @@ int main()
 	long integral = 0;
   
   int max = 0;
-  int const MaxEver = 180;
+  int const MaxEver = 200;
   unsigned int startMs;
 
 	init_motors();
@@ -338,7 +338,7 @@ int main()
 			// turn to the left, and the magnitude of the number determines
 			// the sharpness of the turn.
 			//int power_difference = proportional/4 + derivative*18;
-			int power_difference = proportional/4 + derivative*11;
+			int power_difference = proportional/3 + derivative*18;
 
 			// Compute the actual motor settings.  We never set either motor
 			// to a negative value.
