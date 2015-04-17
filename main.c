@@ -338,7 +338,7 @@ int main()
 			// turn to the left, and the magnitude of the number determines
 			// the sharpness of the turn.
 			//int power_difference = proportional/4 + derivative*18;
-			int power_difference = proportional*4/4 + derivative*40;
+			int power_difference = proportional*2/4 + derivative*30;
 
 			// Compute the actual motor settings.  We never set either motor
 			// to a negative value.
